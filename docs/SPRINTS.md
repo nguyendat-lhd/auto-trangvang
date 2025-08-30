@@ -31,6 +31,15 @@
 - **Deliverables**: Running dev/stage envs; pipelines green; UI shell navigable; docs/README for setup
 - **Exit criteria**: New dev can run locally < 15 mins; rollback verified; RBAC enforced on write paths
 
+#### Sprint 0 Checklist
+- [ ] Appwrite project bootstrapped (DB, Storage, Auth)
+- [ ] Repos scaffolded; local run/seed scripts
+- [ ] CI/CD for dev/stage with secrets and rollback
+- [ ] RBAC baseline applied to collections/functions
+- [ ] Observability baseline dashboards available
+- [ ] Admin UI shell deployed to stage
+- [ ] Local DX one-command start and docs
+
 ### Sprint 1 — MVP Ingestion
 - **Objectives**: Configure sources; ingest raw items via schedule/webhook; basic normalization; minimal UI to manage sources.
 - **Scope**:
@@ -42,6 +51,14 @@
 - **Deliverables**: 1–2 live sources; 10k `raw_items` in dev; basic normalized fields
 - **Exit criteria**: >95% successful runs on dev over 3 days; duplicates in `raw_items` <1%
 
+#### Sprint 1 Checklist
+- [ ] `sources` CRUD with validation
+- [ ] Canary run harness available
+- [ ] Scheduled + webhook ingestion to `raw_items`
+- [ ] Basic normalization with provenance
+- [ ] Sources UI (list/create/detail)
+- [ ] Ingestion observability (dashboards/alerts)
+
 ### Sprint 2 — Resolution & Enrichment MVP
 - **Objectives**: Entity resolution and enrichment pipeline; taxonomy CRUD.
 - **Scope**:
@@ -51,6 +68,11 @@
 - **Deliverables**: 50k entities resolved in dev; enrichment jobs stable
 - **Exit criteria**: Duplicate rate <3%; geocode success >90%; mapping latency acceptable
 
+#### Sprint 2 Checklist
+- [ ] Matching heuristics implemented; thresholds tuned
+- [ ] Enrichment jobs (geocode, validators) stable
+- [ ] Taxonomy CRUD and mapping applied
+
 ### Sprint 3 — Editorial & Publishing MVP
 - **Objectives**: Moderation queue with audit trail; publish read APIs.
 - **Scope**:
@@ -58,6 +80,12 @@
   - Read APIs with filters/pagination; publish notifications
 - **Deliverables**: Editors operating queue; consumers reading published entities
 - **Exit criteria**: Median moderation <24h (test); P95 read <350ms on stage
+
+#### Sprint 3 Checklist
+- [ ] Moderation queue with assignment and audit trail
+- [ ] Inline edit and batch operations
+- [ ] Read APIs with filters/pagination live
+- [ ] Publish notifications emitted
 
 ### Sprint 4 — Versioning & Performance
 - **Objectives**: Snapshots (full/incremental), performance tuning, advanced dashboards.
@@ -68,6 +96,11 @@
 - **Deliverables**: Snapshots for 100k+ entities; perf reports
 - **Exit criteria**: Snapshot <30 min for 300k; P95 read <300ms
 
+#### Sprint 4 Checklist
+- [ ] Snapshot create/restore works with checksums
+- [ ] Query/index tuning applied
+- [ ] Performance dashboards published
+
 ### Sprint 5 — Security & Cost Guardrails
 - **Objectives**: Advanced RBAC; secrets rotation; rate limits/quotas; budget alerts.
 - **Scope**:
@@ -75,6 +108,12 @@
   - Per-source concurrency/rate/quotas; cost estimation and alerts
 - **Deliverables**: Policy documents; enforced quotas; alerting live
 - **Exit criteria**: Zero critical findings; within monthly budget
+
+#### Sprint 5 Checklist
+- [ ] Advanced RBAC and field protections enforced
+- [ ] Key rotation runbook executed
+- [ ] Per-source quotas/limits active
+- [ ] Budget alerts configured
 
 ### Sprint 6 — Hardening & Launch Prep
 - **Objectives**: NFR verification, DR rehearsal, documentation, partner onboarding.
@@ -84,6 +123,12 @@
   - Backlog cleanup and polish
 - **Deliverables**: Launch checklist complete; sign-offs from Eng/Ops/Editorial
 - **Exit criteria**: 99.9% read availability in test; DR RTO/RPO met
+
+#### Sprint 6 Checklist
+- [ ] Load/reliability tests passed
+- [ ] DR rehearsal completed (RTO/RPO met)
+- [ ] Docs/runbooks finalized
+- [ ] Launch checklist signed off
 
 ---
 

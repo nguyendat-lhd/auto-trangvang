@@ -74,6 +74,17 @@ Enable basic ingestion from 1–2 sources into `raw_items` with idempotency and 
 
 ---
 
+### Progress Checklist
+- [ ] S1-01 — `sources` collection and CRUD API
+- [ ] S1-02 — Canary run harness
+- [ ] S1-03 — Ingestion function (scheduled)
+- [ ] S1-04 — Webhook ingestion endpoint
+- [ ] S1-05 — `raw_items` schema and indexes
+- [ ] S1-06 — Basic normalization pipeline
+- [ ] S1-07 — Admin UI: Sources
+- [ ] S1-08 — Ingestion observability
+- [ ] S1-09 — Security & RBAC rules
+
 ### Technical Tasks (by story)
 - S1-01: Collection schema, indexes, validators; API handlers; tests
 - S1-02: Function entrypoint; dry-run mode; sample report; tests

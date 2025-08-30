@@ -68,6 +68,15 @@ Stand up the platform, repositories, CI/CD, RBAC baseline, observability baselin
 
 ---
 
+### Progress Checklist
+- [ ] S0-01 — Appwrite project bootstrap
+- [ ] S0-02 — Repositories & scaffolding
+- [ ] S0-03 — CI/CD pipelines (dev/stage)
+- [ ] S0-04 — RBAC baseline
+- [ ] S0-05 — Observability & logging baseline
+- [ ] S0-06 — Admin UI shell
+- [ ] S0-07 — Local developer experience (DX)
+
 ### Technical Tasks (by story)
 - S0-01: Appwrite CLI scripts; env templates; service key test
 - S0-02: Repo init; workspace config; shared logger/util packages
