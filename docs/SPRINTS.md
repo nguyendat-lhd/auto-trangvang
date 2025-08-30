@@ -32,7 +32,7 @@
 - **Exit criteria**: New dev can run locally < 15 mins; rollback verified; RBAC enforced on write paths
 
 #### Sprint 0 Checklist
-- [ ] Appwrite project bootstrapped (DB, Storage, Auth)
+- [X] Appwrite project bootstrapped (DB, Storage, Auth)
 - [ ] Repos scaffolded; local run/seed scripts
 - [ ] CI/CD for dev/stage with secrets and rollback
 - [ ] RBAC baseline applied to collections/functions
