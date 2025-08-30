@@ -1,13 +1,13 @@
-import { Card, CardContent, Typography } from '@mui/material'
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
 
 export function Dashboard() {
   return (
     <Card>
+      <CardHeader>
+        <CardTitle>Dashboard</CardTitle>
+      </CardHeader>
       <CardContent>
-        <Typography variant="h5" gutterBottom>
-          Dashboard
-        </Typography>
-        <Typography variant="body1">Welcome to the admin dashboard.</Typography>
+        Welcome to the admin dashboard.
       </CardContent>
     </Card>
   )
