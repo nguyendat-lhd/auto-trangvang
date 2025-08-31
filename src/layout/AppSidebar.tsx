@@ -297,28 +297,31 @@ const AppSidebar: React.FC = () => {
       >
         <Link to="/">
           {isExpanded || isHovered || isMobileOpen ? (
-            <>
+            <div className="flex items-center gap-3">
               <img
                 className="dark:hidden"
                 src="/images/logo/trangvang-ai-logo.png"
-                alt="Logo"
-                width={150}
-                height={40}
+                alt="TrangVang AI Logo"
+                width={36}
+                height={36}
               />
               <img
                 className="hidden dark:block"
                 src="/images/logo/trangvang-ai-logo.png"
-                alt="Logo"
-                width={150}
-                height={40}
+                alt="TrangVang AI Logo"
+                width={36}
+                height={36}
               />
-            </>
+              <div className="flex flex-col">
+                <span className="font-semibold text-yellow-500">TRANGVANG.AI</span>
+              </div>
+            </div>
           ) : (
             <img
               src="/images/logo/trangvang-ai-logo.png"
-              alt="Logo"
-              width={32}
-              height={32}
+              alt="TrangVang AI Logo"
+              width={28}
+              height={28}
             />
           )}
         </Link>

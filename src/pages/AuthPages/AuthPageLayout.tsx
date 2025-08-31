@@ -17,17 +17,20 @@ export default function AuthLayout({
             {/* <!-- ===== Common Grid Shape Start ===== --> */}
             <GridShape />
             <div className="flex flex-col items-center max-w-xs">
-              <Link to="/" className="block mb-4">
-                <img
-                  width={231}
-                  height={48}
-                  src="/images/logo/trangvang-ai-logo.png"
-                  alt="Logo"
-                />
+              <Link to="/" className="block mb-3">
+                <div className="flex items-center gap-3">
+                  <img
+                    width={40}
+                    height={40}
+                    src="/images/logo/trangvang-ai-logo.png"
+                    alt="TrangVang AI Logo"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-yellow-500">TRANGVANG.AI</span>
+                  </div>
+                </div>
               </Link>
-              <p className="text-center text-gray-400 dark:text-white/60">
-                Free and Open-Source Tailwind CSS Admin Dashboard Template
-              </p>
+              <p className="text-center text-gray-400 dark:text-white/60" />
             </div>
           </div>
         </div>

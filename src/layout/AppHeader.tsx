@@ -84,16 +84,25 @@ const AppHeader: React.FC = () => {
           </button>
 
           <Link to="/" className="lg:hidden">
-            <img
-              className="dark:hidden"
-              src="/images/logo/trangvang-ai-logo.png"
-              alt="Logo"
-            />
-            <img
-              className="hidden dark:block"
-              src="/images/logo/trangvang-ai-logo.png"
-              alt="Logo"
-            />
+            <div className="flex items-center gap-2">
+              <img
+                className="dark:hidden"
+                src="/images/logo/trangvang-ai-logo.png"
+                alt="TrangVang AI Logo"
+                width={24}
+                height={24}
+              />
+              <img
+                className="hidden dark:block"
+                src="/images/logo/trangvang-ai-logo.png"
+                alt="TrangVang AI Logo"
+                width={24}
+                height={24}
+              />
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-yellow-500">TRANGVANG.AI</span>
+              </div>
+            </div>
           </Link>
 
           <button
