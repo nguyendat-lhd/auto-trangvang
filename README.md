@@ -73,6 +73,17 @@ git clone https://github.com/TailAdmin/free-react-tailwind-admin-dashboard.git
    yarn dev
    ```
 
+### Environment variables (Appwrite)
+
+Create a `.env` file in the project root with the following variables:
+
+```
+VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=YOUR_PROJECT_ID
+```
+
+You can find these values in your Appwrite project's settings.
+
 ## Components
 
 TailAdmin is a pre-designed starting point for building a web-based dashboard using React.js and Tailwind CSS. The
