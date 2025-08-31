@@ -22,7 +22,7 @@ export default function SignInForm() {
       <div className="w-full max-w-md pt-10 mx-auto">
         <Link
           to="/"
-          className="inline-flex items-center text-sm text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+          className="inline-flex items-center text-sm transition-colors text-brand-500 hover:text-brand-600 dark:text-brand-400"
         >
           <ChevronLeftIcon className="size-5" />
           Back to dashboard
